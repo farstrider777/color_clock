@@ -8,3 +8,8 @@ Skills practiced
 
 2. CSS
   * Practiced use of SCSS
+
+3. GitHub
+  * Added branch for people to view completed work
+
+TO VIEW GOTO: https://farstrider777.github.io/color_clock/
