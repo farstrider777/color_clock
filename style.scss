@@ -7,7 +7,6 @@
 $bg: blue;
 
 div {
-  @include bgColor("black")
   color: white;
   background-color: $bg;
   margin: 100px;
