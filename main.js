@@ -1,6 +1,6 @@
 
 jDiv = document.querySelector("div");
-var fnark = 0
+var hexCode = 0
 
 function trimDate(){
   spacesInDate = 0;
@@ -15,16 +15,11 @@ function trimDate(){
   }
   jDiv.innerHTML = onlyTime.join("");
 
-  fnark = onlyTime.filter(function (x){return x !== ":" && x !== " "}).join("");
-  console.log(fnark);
-  fnark = "#" + fnark;
-  jDiv.style.backgroundColor = fnark;
+  hexCode = onlyTime.filter(function (x){return x !== ":" && x !== " "}).join("");
+  hexCode = "#" + hexCode;
+  jDiv.style.backgroundColor = hexCode;
 }
 
 trimDate();
 
-
-
 setInterval(trimDate, 1000);
-
-//div.style.marginTop = ".25in";

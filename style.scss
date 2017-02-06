@@ -6,13 +6,6 @@
 
 $bg: blue;
 
-@mixin bgColor($bcolor) {
-
-          background-color: $bcolor;
-}
-
-
-
 div {
   @include bgColor("black")
   color: white;
