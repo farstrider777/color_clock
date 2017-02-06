@@ -1,4 +1,27 @@
-body {
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+ }
+
+$bg: blue;
+
+@mixin bgColor($bcolor) {
+
+          background-color: $bcolor;
+}
+
+
+
+div {
+  @include bgColor("black")
   color: white;
-  background-color: black
+  background-color: $bg;
+  margin: 100px;
+  height: 400px;
+  width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 180px;
+  font-size: 30px;
 }
