@@ -16,7 +16,8 @@ function trimDate(){
   jDiv.innerHTML = onlyTime.join("");
 
   fnark = onlyTime.filter(function (x){return x !== ":" && x !== " "}).join("");
-
+  console.log(fnark);
+  fnark = "#" + fnark;
   jDiv.style.backgroundColor = fnark;
 }
 
